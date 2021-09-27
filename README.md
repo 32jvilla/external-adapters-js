@@ -232,6 +232,10 @@ The following section details mechanisms that reduce the number of API calls mad
 
 Caching allows for the EA to store successful responses and facilitate faster future response times.
 
+> ### ⚠️ Note
+>
+> Please check and ensure caching is allowed and not in violation of the Terms of Service of the data provider's API. Only turn caching flags on if it is supported by the specified API provider's TOS.
+
 To enable, the following environment variables must be set:
 
 ```bash
