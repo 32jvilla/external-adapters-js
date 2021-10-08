@@ -2281,7 +2281,7 @@ __metadata:
     "@chainlink/types": 0.0.1
     "@types/jest": 27.0.2
     "@types/node": 14.17.21
-    hardhat: 2.6.1
+    hardhat: 2.6.5
     tslib: ^2.3.1
     typescript: 4.3.5
   languageName: unknown
@@ -14233,9 +14233,9 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-"hardhat@npm:2.6.1":
-  version: 2.6.1
-  resolution: "hardhat@npm:2.6.1"
+"hardhat@npm:2.6.5":
+  version: 2.6.5
+  resolution: "hardhat@npm:2.6.5"
   dependencies:
     "@ethereumjs/block": ^3.4.0
     "@ethereumjs/blockchain": ^5.4.0
@@ -14286,7 +14286,7 @@ fsevents@~2.1.1:
     ws: ^7.4.6
   bin:
     hardhat: internal/cli/cli.js
-  checksum: 3dee779b6b8768d8029015423805635180457f0c8ac9a5ac080c7887c8e28039f291b0113b10a2a90bef2b88788457caff8f020ae8a07bb7a4f12fd318c93f95
+  checksum: dea61151b0961d8c4719a98c11b3aa9a8aeab73fc46003087841f23228a96ec65f460f10dd1ff36d7dae437eada3f3ec469f144b6debe2a6713e5078087d86ea
   languageName: node
   linkType: hard
 

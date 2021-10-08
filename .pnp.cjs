@@ -4552,7 +4552,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chainlink/types", "workspace:packages/core/types/@chainlink"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/node", "npm:14.17.21"],
-            ["hardhat", "npm:2.6.1"],
+            ["hardhat", "npm:2.6.5"],
             ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
           ],
@@ -18010,10 +18010,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["hardhat", [
-        ["npm:2.6.1", {
-          "packageLocation": "./.yarn/cache/hardhat-npm-2.6.1-c6fddc15f2-3dee779b6b.zip/node_modules/hardhat/",
+        ["npm:2.6.5", {
+          "packageLocation": "./.yarn/cache/hardhat-npm-2.6.5-c3c54d65f7-dea61151b0.zip/node_modules/hardhat/",
           "packageDependencies": [
-            ["hardhat", "npm:2.6.1"],
+            ["hardhat", "npm:2.6.5"],
             ["@ethereumjs/block", "npm:3.4.0"],
             ["@ethereumjs/blockchain", "npm:5.4.0"],
             ["@ethereumjs/common", "npm:2.4.0"],
