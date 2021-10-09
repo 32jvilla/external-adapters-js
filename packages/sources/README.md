@@ -7,6 +7,7 @@
 - [Alphavantage](./alphavantage/README.md)
 - [Amberdata](./amberdata/README.md)
 - [Anyblock](./anyblock/README.md)
+- [Balances](./balances/README.md)
 - [Binance DEX](./binance-dex/README.md)
 - [Bitex](./bitex/README.md)
 - [Bitso](./bitso/README.md)
