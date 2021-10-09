@@ -1,11 +1,7 @@
 import { Requester, Validator } from '@chainlink/ea-bootstrap'
 import { Config, ExecuteWithConfig, InputParameters } from '@chainlink/types'
 
-export const supportedEndpoints = ['sum']
-
-export const endpointResultPaths = {
-  example: 'price',
-}
+export const supportedEndpoints = ['sum', 'minMax']
 
 type ResponseSchema = Array<{ address: string; balance: number }>
 
@@ -22,6 +18,14 @@ export const execute: ExecuteWithConfig<Config> = async (request, _, config) => 
     .reduce(function (a, b) {
       return a + b
     })
+
+  const minAddress = response.data.reduce(function (prev, curr) {
+    return prev.balance < curr.balance ? prev : curr
+  }).address
+  const maxAddress = response.data.reduce(function (prev, curr) {
+    return prev.balance > curr.balance ? prev : curr
+  }).address
+  console.log(minAddress, maxAddress)
 
   return Requester.success(jobRunID, Requester.withResult(response, result), config.verbose)
 }
