@@ -94,6 +94,10 @@
     },
     "ws": {}
   },
+  "balances": {
+    "http": {},
+    "ws": {}
+  },
   "binance": {
     "http": {
       "public": {
