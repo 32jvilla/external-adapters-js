@@ -171,6 +171,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/sources/anyblock"
       },
       {
+        "name": "@chainlink/balances-adapter",
+        "reference": "workspace:packages/sources/balances"
+      },
+      {
         "name": "@chainlink/binance-adapter",
         "reference": "workspace:packages/sources/binance"
       },
@@ -602,6 +606,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@chainlink/anyblock-adapter", ["workspace:packages/sources/anyblock"]],
       ["@chainlink/apy-finance-adapter", ["workspace:packages/composites/apy-finance"]],
       ["@chainlink/augur-adapter", ["workspace:packages/composites/augur"]],
+      ["@chainlink/balances-adapter", ["workspace:packages/sources/balances"]],
       ["@chainlink/binance-adapter", ["workspace:packages/sources/binance"]],
       ["@chainlink/binance-dex-adapter", ["workspace:packages/sources/binance-dex"]],
       ["@chainlink/bitcoin-json-rpc-adapter", ["workspace:packages/composites/bitcoin-json-rpc"]],
@@ -3548,6 +3553,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@chainlink/balances-adapter", [
+        ["workspace:packages/sources/balances", {
+          "packageLocation": "./packages/sources/balances/",
+          "packageDependencies": [
+            ["@chainlink/balances-adapter", "workspace:packages/sources/balances"],
+            ["@chainlink/ea-bootstrap", "workspace:packages/core/bootstrap"],
+            ["@chainlink/ea-test-helpers", "workspace:packages/core/test-helpers"],
+            ["@chainlink/types", "workspace:packages/core/types/@chainlink"],
+            ["@types/jest", "npm:27.0.2"],
+            ["@types/node", "npm:14.17.21"],
+            ["tslib", "npm:2.3.1"],
+            ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["@chainlink/binance-adapter", [
         ["workspace:packages/sources/binance", {
           "packageLocation": "./packages/sources/binance/",
@@ -4329,6 +4350,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chainlink/alphavantage-adapter", "workspace:packages/sources/alphavantage"],
             ["@chainlink/amberdata-adapter", "workspace:packages/sources/amberdata"],
             ["@chainlink/anyblock-adapter", "workspace:packages/sources/anyblock"],
+            ["@chainlink/balances-adapter", "workspace:packages/sources/balances"],
             ["@chainlink/binance-adapter", "workspace:packages/sources/binance"],
             ["@chainlink/binance-dex-adapter", "workspace:packages/sources/binance-dex"],
             ["@chainlink/bitex-adapter", "workspace:packages/sources/bitex"],
@@ -4390,6 +4412,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chainlink/lcx-adapter", "workspace:packages/sources/lcx"],
             ["@chainlink/linkpool-adapter", "workspace:packages/sources/linkpool"],
             ["@chainlink/lition-adapter", "workspace:packages/sources/lition"],
+            ["@chainlink/lotus-adapter", "workspace:packages/sources/lotus"],
             ["@chainlink/marketstack-adapter", "workspace:packages/sources/marketstack"],
             ["@chainlink/messari-adapter", "workspace:packages/sources/messari"],
             ["@chainlink/metalsapi-adapter", "workspace:packages/sources/metalsapi"],
@@ -4422,6 +4445,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chainlink/trueusd-adapter", "workspace:packages/sources/trueusd"],
             ["@chainlink/twelvedata-adapter", "workspace:packages/sources/twelvedata"],
             ["@chainlink/unibit-adapter", "workspace:packages/sources/unibit"],
+            ["@chainlink/uniswap-v2-adapter", "workspace:packages/sources/uniswap-v2"],
             ["@chainlink/upvest-adapter", "workspace:packages/sources/upvest"],
             ["@chainlink/uscpi-one-adapter", "workspace:packages/sources/uscpi-one"],
             ["@chainlink/wbtc-address-set-adapter", "workspace:packages/sources/wbtc-address-set"],
