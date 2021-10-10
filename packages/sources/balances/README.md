@@ -63,7 +63,7 @@ This returns the address of either the smallest or largest holder
   "id": "1",
   "data": {
     "endpoint": "minMax",
-    "min" true,
+    "min": true,
   }
 }
 ```
