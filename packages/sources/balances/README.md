@@ -10,7 +10,7 @@ None
 
 | Required? |   Name   |     Description     |            Options            | Defaults to |
 | :-------: | :------: | :-----------------: | :---------------------------: | :---------: |
-|           | endpoint | The endpoint to use | [sum](#Sum-Endpoint) [minMax](#MinMax-Endpoint) |   sum   |
+|           | endpoint | The endpoint to use | [sum](#Sum-Endpoint), [minMax](#MinMax-Endpoint) |   `sum`   |
 
 ---
 
@@ -40,7 +40,9 @@ None
   "jobRunID":"1",
   "result":462122230678539,
   "statusCode":200,
-  "data":{"result":462122230678539}
+  "data": {
+    "result":462122230678539
+  }
 }
 ```
 
@@ -73,6 +75,8 @@ This returns the address of either the smallest or largest holder
   "jobRunID":"1",
   "result":"15XPFnJAjPiyTi59BexgHpQBMsA9xzjNn9",
   "statusCode":200,
-  "data":{"result":"15XPFnJAjPiyTi59BexgHpQBMsA9xzjNn9"}
+  "data":{
+    "result":"15XPFnJAjPiyTi59BexgHpQBMsA9xzjNn9"
+  }
 }
 ```
