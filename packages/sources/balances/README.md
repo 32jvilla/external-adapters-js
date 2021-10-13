@@ -54,7 +54,7 @@ This returns the address of either the smallest or largest holder
 
 | Required? |      Name       |        Description         | Options | Defaults to |
 | :-------: | :-------------: | :------------------------: | :-----: | :---------: |
-|           |    `min`        | `true` returns the address with the min holdings, `false` returns the address with the max holdings |  `true`, `false`       |     `true`         |
+|           |    `minOrMax`        | specifies which address to return - the smallest or largest holder |  `min`, `max`       |     `max`         |
 
 ### Sample Input
 
