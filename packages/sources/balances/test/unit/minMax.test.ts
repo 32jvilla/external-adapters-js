@@ -10,7 +10,14 @@ describe('execute', () => {
   describe('successful calls', () => {
     const requests = [
       {
-        name: 'no minMax specified',
+        name: 'no endpoint specified',
+        testData: {
+          id: jobID,
+          data: {},
+        },
+      },
+      {
+        name: 'no minOrMax specified',
         testData: {
           id: jobID,
           data: {
@@ -24,15 +31,6 @@ describe('execute', () => {
           data: {
             endpoint: 'minMax',
             min: true,
-          },
-        },
-      },
-      {
-        name: 'min arg is an int',
-        testData: {
-          data: {
-            endpoint: 'minMax',
-            min: 3,
           },
         },
       },
@@ -50,6 +48,15 @@ describe('execute', () => {
     const requests = [
       { name: 'empty body', testData: {} },
       { name: 'empty data', testData: { data: {} } },
+      {
+        name: 'minOrMax arg is an int',
+        testData: {
+          data: {
+            endpoint: 'minMax',
+            min: 3,
+          },
+        },
+      },
     ]
 
     requests.forEach((req) => {
